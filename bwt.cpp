@@ -93,17 +93,16 @@ int main()
     str += " ";
   }
   dic = c.bwt(str);
-  cout << "↓BTF"<< endl;
+  cout << "↓ BWTで変換"<< endl;
   for (auto d : dic) {
     sBwt = d.first;
     cout << d.first << " " << d.second << endl;
   }
   ans = c.mtf(str,sBwt);
-  cout << "↓MTF"<< endl;
+  cout << "↓ MTFで変換" << endl;
   for (auto i : ans) {
     cout << i;
   }
   cout << endl;
   return 0;
 }
-
